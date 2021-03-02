@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 from PIL import Image
 
 import numpy as np
-import paddle
 import paddle.fluid as fluid
 from paddle.fluid.dygraph.nn import Conv2D
 from paddle.fluid.initializer import NumpyArrayInitializer
