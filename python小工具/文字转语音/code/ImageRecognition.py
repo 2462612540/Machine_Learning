@@ -17,7 +17,7 @@ def get_file_content(filePath):
     with open(filePath, 'rb') as fp:
         return fp.read()
 
-image = get_file_content('../data/frist.jpg')
+image = get_file_content('../row_data/frist.jpg')
 
 """ 调用食材识别 """
 data=client.ingredient(image);
