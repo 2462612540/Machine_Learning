@@ -9,12 +9,12 @@
 import paddle.fluid as fluid
 import matplotlib.pyplot as plt
 import os
-from 手写数学的识别.row_data.data_process import load_data
-from 手写数学的识别.model_build.nn import multilayer_perceptron
+from Paddle_Number.row_data.data_process import load_data
+from Paddle_Number.model_build.nn import multilayer_perceptron
 
 BUF_SIZE = 512
 BATCH_SIZE = 128
-model_save_dir = r"D:/softwaresavfile/Github/machine_learning/手写数学的识别/mode_save/"
+model_save_dir = r"D:/softwaresavfile/Github/machine_learning/Paddle_Number/mode_save/"
 
 # 画图的功能
 def draw_train_process(title, iters, costs, accs, label_cost, lable_acc):
@@ -25,7 +25,7 @@ def draw_train_process(title, iters, costs, accs, label_cost, lable_acc):
     plt.plot(iters, accs, color='green', label=lable_acc)
     plt.legend()
     plt.grid()
-    plt.savefig(r"D:\\softwaresavfile\\Github\\machine_learning\\手写数学的识别\\train_model\\train_img\\train_loss")
+    plt.savefig(r"D:\\softwaresavfile\\Github\\machine_learning\\Paddle_Number\\train_model\\train_img\\train_loss")
     plt.show()
 
 # 4、开始训练
