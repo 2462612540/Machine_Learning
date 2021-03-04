@@ -7,9 +7,7 @@
 @time: 2021/3/4 10:21
 """
 #导入需要的包
-import numpy as np
 import paddle as paddle
-
 BUF_SIZE = 512
 BATCH_SIZE = 128
 
@@ -25,8 +23,5 @@ def load_data():
                               buf_size=BUF_SIZE),
         batch_size=BATCH_SIZE)
     return train_reader, test_reader
-
-
-
 
 
