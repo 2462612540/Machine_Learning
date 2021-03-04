@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 use_cuda = True
 place = fluid.CUDAPlace(0) if use_cuda else fluid.CPUPlace()
 
-model_save_dir = "hand.inference.model"
+model_save_dir = r"D:\softwaresavfile\Github\machine_learning\手写数学的识别\mode_save\__model__"
 
 # 图片预处理
 def load_image(file):
@@ -30,6 +30,7 @@ infer_path = '/home/aistudio/work/5.png'
 img = Image.open(infer_path)
 plt.imshow(img)  # 根据数组绘制图像
 plt.show()  # 显示图像
+
 
 # 创建Executer
 infer_exe = fluid.Executor(place)

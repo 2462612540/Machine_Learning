@@ -25,8 +25,8 @@ def draw_train_process(title, iters, costs, accs, label_cost, lable_acc):
     plt.plot(iters, accs, color='green', label=lable_acc)
     plt.legend()
     plt.grid()
+    plt.savefig(r"D:\\softwaresavfile\\Github\\machine_learning\\手写数学的识别\\train_model\\train_img\\train_loss")
     plt.show()
-
 
 # 4、开始训练
 def trainer():
