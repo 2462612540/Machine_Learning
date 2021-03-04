@@ -14,7 +14,7 @@ from 手写数学的识别.model_build.nn import multilayer_perceptron
 
 BUF_SIZE = 512
 BATCH_SIZE = 128
-model_save_dir = r"手写数学的识别/mode_save"
+model_save_dir = r"D:/softwaresavfile/Github/machine_learning/手写数学的识别/mode_save/"
 
 # 画图的功能
 def draw_train_process(title, iters, costs, accs, label_cost, lable_acc):
